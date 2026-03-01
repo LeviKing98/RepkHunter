@@ -20,6 +20,7 @@ def unzip_apk(apk_path):
     unzip_path='./unzip_apk/'+apk_name
     if os.path.exists(unzip_path):
         shutil.rmtree(unzip_path)
+    os.makedirs(unzip_path)
     cmd=f'unzip {apk_path} -d {unzip_path}'
     result=subprocess.run(cmd, shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE)
     if result.returncode!=0:
@@ -33,6 +34,7 @@ def disassemble_dex(dex_path):
     反编译dex文件
     """
     cmd=f'./baksmali disassemble {dex_path}'
+    print(cmd)
     result=subprocess.run(cmd,shell=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
     if result.returncode!=0:
         print(f'反编译dex文件失败，dex_path={dex_path}')
@@ -56,8 +58,8 @@ def preproccess_apk(apk_path):
             dex_path=os.path.join(unzip_path,file)
             disassemble_dex(dex_path)
     # 清理解压文件
-    if os.path.exists(unzip_path):
-        shutil.rmtree(unzip_path)
+    # if os.path.exists(unzip_path):
+    #     shutil.rmtree(unzip_path)
     
 if __name__=='__main__':
     apk_path='./000D753E7C480FA12D69FD826890683B786E4C344C52A193F1AABE07542D4EFE.apk'

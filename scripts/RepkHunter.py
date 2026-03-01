@@ -649,6 +649,8 @@ if __name__=='__main__':
     path2 = sys.argv[2]
     node_set_2, node_hash_2 = generate_bin(path2)
     
+    if not os.path.exists('./res'):
+        os.makedirs('./res')
     save_set(node_set_1, './res/node_set_{}.txt'.format(path1.split('/')[-1]))
     save_set(node_set_2, './res/node_set_{}.txt'.format(path2.split('/')[-1]))
     save_set(node_hash_1, './res/node_hash_{}.txt'.format(path1.split('/')[-1]))
