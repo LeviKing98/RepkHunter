@@ -2,7 +2,7 @@
 
 A tool used to detect repackaged APKs. It is specifically designed for anti-obfuscation purposes.
 
-# SetUp
+# Setup
 1. install the Java Runtime Environment (JRE) and Java Decompiler (baksmali) on your system.
     - baksmali.jar and baksmali are required to decompile APKs. You can download them from [baksmali.jar](https://github.com/baksmali/smali/releases) and [baksmali](https://github.com/baksmali/smali/blob/main/scripts/baksmali). They should be set in the directory under ./scripts.
 
