@@ -24,6 +24,9 @@ python RepkHunter.py ./example/apk1 ./example/apk2
 
 The output will be a similarity score between 0 and 1, where 1 indicates a perfect match.
 ```
-Similairy Score = xx
+Similarity score:0.9864253393665159
 ```
 # Dataset
+The dataset used in this project is available at [here](https://drive.google.com/file/d/1-3h33h33h33h33h33h33h33h33h33h3/view?usp=share_link).
+
+You can use obfuscators to obfuscate the APKs in the dataset.
