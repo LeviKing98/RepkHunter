@@ -29,4 +29,4 @@ Similarity score:0.9864253393665159
 # Dataset
 The dataset we used is a repackaged apps collected from AndroZoo, which is available at [here](https://github.com/serval-snt-uni-lu/RePack).
 
-You can use obfuscators to obfuscate the APKs in the dataset. In the paper, we evaluate RepkHunter on five obfuscators, [ProGuard](https://github.com/Guardsquare/proguard) and [DahsO](https://www.preemptive.com/products/dasho/), [DexGuard](https://www.guardsquare.com/dexguard), [Obfuscapk](https://github.com/ClaudiuGeorgiu/Obfuscapk) and [AVPASS](https://github.com/sslab-gatech/avpass).
+You can use obfuscators to obfuscate the APKs in the dataset. In the paper, we evaluate RepkHunter on five obfuscators, [ProGuard](https://github.com/Guardsquare/proguard), [DahsO](https://www.preemptive.com/products/dasho/), [DexGuard](https://www.guardsquare.com/dexguard), [Obfuscapk](https://github.com/ClaudiuGeorgiu/Obfuscapk) and [AVPASS](https://github.com/sslab-gatech/avpass).
