@@ -27,6 +27,6 @@ The output will be a similarity score between 0 and 1, where 1 indicates a perfe
 Similarity score:0.9864253393665159
 ```
 # Dataset
-The dataset used in this project is available at [here](https://drive.google.com/file/d/1-3h33h33h33h33h33h33h33h33h33h3/view?usp=share_link).
+The dataset we used is a repackaged apps collected from AndroZoo, which is available at [here](https://github.com/serval-snt-uni-lu/RePack).
 
-You can use obfuscators to obfuscate the APKs in the dataset.
+You can use obfuscators to obfuscate the APKs in the dataset. In the paper, we evaluate RepkHunter on five obfuscators, [ProGuard](https://github.com/Guardsquare/proguard) and [DahsO](https://www.preemptive.com/products/dasho/), [DexGuard](https://www.guardsquare.com/dexguard), [Obfuscapk](https://github.com/ClaudiuGeorgiu/Obfuscapk) and [AVPASS](https://github.com/sslab-gatech/avpass).
